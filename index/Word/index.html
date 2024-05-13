@@ -3,18 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>js-lesson</title>
+    <title>今日の一言を言います。</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div id="gacha-display">
-        今日のひとことガチャ!ぜひ幸運を!<br>
-        下記ボタンをクリック/タップで表示します。
+    <h1>今日の一言を言います。</h1>
+    <div class="setumei">
+    <p>※ランダムで生成してるだけですので絶対にいい事とか絶対に悪いことが起こるわけではありません。</p>
+    <p>面白い診断系コンテンツとしてお楽しみください。</p>
+    <p>※「明日の一言ボタン」を押すと明日の一言が見れるページに移動します。</p>
+    <hr>
+    <p>このコンテンツは「-2 ~ +2 」まであります。</p>
     </div>
-    <button id="gacha-button">一言を表示</button>
+    <div class="nojs">
+    <noscript>JavascriptがOFFです。ONにしてからお楽しみください。</noscript>
+    </div>
+    <hr>
+    <div id="gacha-display">ここに結果が出るよ！下のボタンを押してね！！</div>
+
+    <div class="btnbtn">
+    <button id="gacha-button">今日の一言を見るボタン</button>
+    </div>
     
-    <br><a href="2.html">明日のひとことがちゃを見たかったらこっちを押してね！</a>
+    <div class="urlcl">
+    <button id="urlbtn">明日の一言ボタン</button>
+    </div>
+
+    <div class="update">
+        <p>update履歴</p>
+        <hr>
+        <ul>
+            <li>2024/5/13 ver1.1 update(CSSの導入)</li>
+            <li>2024/5/11 ver1.0 update</li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy;---@FreedomHuri And Flegertec Dev Team 2021-2024 無断転載すんなよ</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
