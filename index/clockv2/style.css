@@ -24,7 +24,7 @@ body #clock{
     border-radius: 4px;
     }
 
-@media (max-width: 500px){
+@media (max-width: 621px){
 body #clock{
     font-family: 'MyCustomFont', sans-serif;
     font-size: 20px;
@@ -55,7 +55,7 @@ body #clock{
     background-color: #FF4F02;
 }
 
-@media (max-width: 500px){
+@media (max-width: 621px){
     .btn1 button{
         height: 35px;
         font-size: 15px;
