@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('font/DSEG7Classic-Bold.woff2') format('woff2');
+    /*Font "DSEG" by けしかん*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #96a945;
+    color: black;
+}
+
+body #clock{
+    font-family: 'MyCustomFont', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    margin-left: 20%;
+    margin-right: 19.5%;
+    margin-top: 100px;
+    background-color: #de4502;
+    border: 8px solid #000000;
+    border-radius: 4px;
+    }
+
+@media (max-width: 500px){
+body #clock{
+    font-family: 'MyCustomFont', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+    background-color: #de4502;
+    border: 8px solid #000000;
+    border-radius: 4px;
+    }
+}
+
+.clocktxt1{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.btn1 button{
+    height: 50px;
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.btn1 :hover{
+    background-color: #FF4F02;
+}
+
+@media (max-width: 500px){
+    .btn1 button{
+        height: 35px;
+        font-size: 15px;
+        margin: -2px;
+    }
+    
+    .btn1 :hover{
+        background-color: #FF4F02;
+    }
+}
