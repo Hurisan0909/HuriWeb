@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCBS2??$縛り</title>
+    <style>
+        #gacha-display{
+            text-align: center;
+            color: aliceblue;
+            background-color: black;
+            padding: 20px;
+            font-size: 50px;
+            margin: 40px;
+        }
+    
+    .btnall{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    button{
+        height: 50px;
+        width: 50%;
+    }
+    </style>
+</head>
+<body>
+    
+    <div id="gacha-display">???</div>
+    <div class="btnall">
+    <button id="gacha-button">お客様が希望するPC本体代の金額</button>
+    </div>
+    <p>&copy; @FreedomHuri 無断転載はおやめください</p>
+    <script>
+        const kakugen_items = [
+        "unlimited $",
+        "12000$",
+        "10000$",
+        "9000$",
+        "8000$",
+        "7000$",
+        "6000$",
+        "5000$",
+        "4000$",
+        "3000$",
+        "2000$",
+        "1000$",
+        "900$",
+        "800$"
+    ];
+
+const btn = document.getElementById("gacha-button");
+const disp = document.getElementById("gacha-display");
+
+btn.addEventListener("click", function() {
+  const num = Math.floor(Math.random() * kakugen_items.length );
+    disp.innerHTML = kakugen_items[num];
+});
+    </script>
+</body>
+</html>
