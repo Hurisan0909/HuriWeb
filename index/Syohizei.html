@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>消費税計算機</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        label {
+            font-size: 18px;
+        }
+        input[type="number"], select, button {
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        p {
+            font-size: 18px;
+        }
+        @media (min-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+            label, input[type="number"], select, button, p {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>消費税計算機</h1>
+    <label for="price">税抜価格 (円):</label>
+    <input type="number" id="price" name="price"><br><br>
+
+    <label for="taxRate">消費税率:</label>
+    <select id="taxRate" name="taxRate">
+        <option value="1.08">8%</option> <!--0.08-->
+        <option value="0.10" selected>10%</option><!--0.10-->
+    </select><br><br>
+
+    <button onclick="calculateTax()">計算する</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateTax() {
+            try {
+                const price = document.getElementById('price').value;
+                if (isNaN(price) || price === "") {
+                    throw new Error("税抜価格に有効な数字を入力してください。");
+                }
+                const taxRate = document.getElementById('taxRate').value;
+                const taxAmount = price * taxRate;
+                const totalPrice = parseFloat(price) + parseFloat(taxAmount);
+                document.getElementById('result').innerText = ` 税込価格: ¥${totalPrice.toFixed(2)}`;
+            } catch (error) {
+                document.getElementById('result').innerText = `エラー: ${error.message}`;
+            }
+        }
+    </script>
+</body>
+</html>
