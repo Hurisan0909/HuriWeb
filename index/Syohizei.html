@@ -49,12 +49,16 @@
 
     <label for="taxRate">消費税率:</label>
     <select id="taxRate" name="taxRate">
-        <option value="1.08">8%</option> <!--0.08-->
+        <option value="0.08">8%</option> <!--0.08-->
         <option value="0.10" selected>10%</option><!--0.10-->
     </select><br><br>
 
     <button onclick="calculateTax()">計算する</button>
     <p id="result"></p>
+
+    <small>&copy;FreedomHuri 無断転載・無断な改造はおやめください</small>
+    <small>※ただ掛け算をしているだけです。複雑な計算はできません。</small>
+    <small>※消費税の細かな点は<a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6102.htm">国税庁のサイト</a>をご覧ください。</small>
 
     <script>
         function calculateTax() {
