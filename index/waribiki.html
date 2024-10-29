@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>割引計算機</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>割引計算機</h1>
+        <label for="originalPrice">元の価格:</label>
+        <input type="number" id="originalPrice" placeholder="円"><br><br>
+        <label for="discountRate">割引率(%):</label>
+        <input type="number" id="discountRate" placeholder="%"><br><br>
+        <button onclick="calculateDiscount()">計算する</button>
+        <div class="result" id="result"></div>
+        <small>&copy;FreedomHuri </small>
+        <small><br>簡易的な計算になります。複雑な計算はできません。</small>
+    </div>
+
+    <script>
+        function calculateDiscount() {
+            const originalPrice = document.getElementById("originalPrice").value;
+            const discountRate = document.getElementById("discountRate").value;
+            
+            if (!originalPrice || !discountRate) {
+                document.getElementById("result").innerHTML = "値を入力してください。";
+                return;
+            }
+
+            const discount = originalPrice * (discountRate / 100);
+            const finalPrice = originalPrice - discount;
+
+            document.getElementById("result").innerHTML = "割引額: ¥" + discount.toFixed(2) + "<br>割引後の価格: ¥" + finalPrice.toFixed(2);
+        }
+    </script>
+</body>
+</html>
