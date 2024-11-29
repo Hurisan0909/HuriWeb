@@ -1,39 +1,42 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HuriHOME</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <style>
-        header{
-            text-align: center;
-        }
-    </style>
+    <title>huri-home</title>
+    <link rel="stylesheet" href="home-style.css">
 </head>
 <body>
-    <header>
-        <div class="animate__backInLeft">
-            <h1>Welcome to Hurisan Home</h1>
-        </div>
-    </header>
-    <main>
-        <h1><a href = "https://hurisan0909.github.io/huriprofile/profile.htm">Huriプロフィール</a></h1>
-        <a href="index/index/main/notebooks/Noteindex.html">Huri IT word notebook</a>
+    <h1>||| ~ Welcome to huri-home ~ |||</h1>
+    <div id="clock-container">
+        <div id="greeting"></div>   
+        <div id="date"></div>
+        <div id="time"></div>
+    </div>
+
+    <div class="main-cont">
+    <h2>Tool</h2>
+    <p>私がHTML/CSS/JSを使った作品。用途不明から何かと便利なものまでいろいろ。</p>
+    <p>※_たまにAI使う。</p>
+    <p style="text-align: right;">update_2024/11/29/(FR)</p>
+    <ul id="myUL">
+        <!-- copy | <li><a href=""></a></li> |-->
+        <li><a href="index/countdown.html">2024年カウントダウンページ</a></li>
+        <li><a href="index/cursor.html">マウスポインター見た目チェッカー</a></li>
+        <li><a href="index/Syohizei.html">消費税計算</a></li>
+        <li><a href="index/waribiki.html">割引計算</a></li>
+        <li><a href="index/PCBS2$.html/dollr.html">PCBS2の予算縛りツール</a></li>
+        <li><a href="index/clockv2/clock.html">7セグミリ秒classic時計</a></li>
+    </ul>
+
+    <div class="hurisan">
+        <h2>Hurisan</h2>
+        <a href="https://hurisan0909.github.io/huriprofile/profile.htm">私のプロフィールはここをクリック</a>
         <br>
-        <a href="index/Word/index.html">今日のひとこと</a>
-        <br>
-        <a href="index/clockv2/clock.html">ミリ秒時計(7セグ）</a>
-        <br>
-        <a href="index/PCBS2$.html/dollr.html">PCBS1/2の予算縛り用のツール</a>
-        <br>
-        <a href="index/Syohizei.html">簡易消費税計算10%/8%</a>
-        <br>
-        <a href="index/cursor.html">マウスポインター見た目チェッカー</a>
-        <br>
-        <a href="index/countdown.html">2024年のカウントダウン</a>
-        <br>
-        <a href="index/waribiki.html">簡易割引計算</a>
-    </main>
+        <p>&copy;FreedomHuri-copy及び無断転載はご遠慮ください。</p>
+    </div>
+
+    <script src="clock.js"></script>
+    </div>
 </body>
 </html>
