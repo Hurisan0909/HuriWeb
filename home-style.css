@@ -1,0 +1,72 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.main-cont{
+    border: 1px solid #000;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#myInput {
+width: 50%; /* 全幅 */
+font-size: 16px; /* フォントサイズを大きく */
+padding: 15px 30px 20px 40px; /* 余白を追加 */
+border: 1px solid #ddd; /* グレーのボーダーを追加 */
+margin-bottom: 12px; /* 入力欄の下にスペースを追加 */
+}
+
+#myUL {
+list-style-type: none; /* リストのデフォルトスタイルを削除 */
+padding: 0;
+margin: 0;
+}
+
+ul#myUL li {
+padding: 1;
+}
+
+#myUL li a {
+border: 1px solid #ddd; /* リンクにボーダーを追加 */
+margin-top: -1px; /* 二重ボーダーを防止 */
+background-color: #eee; /* グレーの背景色 */
+padding: 15px; /* 余白を追加 */
+text-decoration: none; /* デフォルトの下線を削除 */
+font-size: 18px; /* フォントサイズを大きく */
+color: black; /* 黒のテキストカラー */
+display: block; /* ブロック要素にしてリスト全体を埋める */
+}
+
+#myUL li a:hover:not(.header) {
+background-color: #c8e4ff; /* ホバーエフェクトを追加 */
+}
+
+#clock-container{
+    border: 1px solid #000;
+    text-align: center;
+    padding: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: 700;
+}
+
+.update_log{
+    border: 3px solid #000;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 50px 50px 10px 10px;
+}
+
+.hurisan{
+    border: 3px solid #000;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px
+}
